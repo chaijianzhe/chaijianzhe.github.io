@@ -14,11 +14,18 @@
   "updated": "September 2026",
   "roles": [
     {
-      "title": "M.S. Graduate",
+      "title": "PhD Student",
       "organization": "Institute of Science Tokyo",
-      "detail": "Sakuma Lab, School of Computing; graduated September 2026",
-      "start": "October 2024",
-      "status": "completed"
+      "detail": "Sakuma Lab",
+      "start": "October 2026",
+      "status": "current"
+    },
+    {
+      "title": "Research Associate",
+      "organization": "RIKEN",
+      "detail": "",
+      "start": "November 2026",
+      "status": "current"
     },
     {
       "title": "Research Assistant",
@@ -28,33 +35,26 @@
       "status": "current"
     },
     {
-      "title": "Incoming PhD Student",
+      "title": "M.S. Graduate",
       "organization": "Institute of Science Tokyo",
-      "detail": "Sakuma Lab",
-      "start": "October 2026",
-      "status": "incoming"
-    },
-    {
-      "title": "Incoming Research Associate",
-      "organization": "RIKEN",
-      "detail": "",
-      "start": "November 2026",
-      "status": "incoming"
+      "detail": "Sakuma Lab, School of Computing; graduated September 2026",
+      "start": "October 2024",
+      "status": "completed"
     }
   ],
   "biography": [
     "My research focuses on reliable evaluation of large language models and AI security. I study benchmark contamination, inference-time decontamination, and the detection of AI-generated content, with an interest in distinguishing genuine model capabilities from memorization.",
-    "I completed my M.S. in Sakuma Lab at the Institute of Science Tokyo in September 2026 and currently work there as a Research Assistant. I will continue in the lab as a PhD student in October 2026 and join RIKEN as a Research Associate in November 2026.",
+    "I am a PhD student in Sakuma Lab at the Institute of Science Tokyo and a Research Associate at RIKEN. I also work as a part-time Research Assistant at the Institute of Science Tokyo, where I completed my M.S. in September 2026.",
     "I received my B.Eng. in Software Engineering from the University of Electronic Science and Technology of China (UESTC) in June 2024."
   ],
   "news": [
     {
       "date": "Nov 2026",
-      "text": "Upcoming: I will join RIKEN as a Research Associate."
+      "text": "I joined RIKEN as a Research Associate."
     },
     {
       "date": "Oct 2026",
-      "text": "Upcoming: I will begin my PhD in Sakuma Lab at the Institute of Science Tokyo."
+      "text": "I began my PhD in Sakuma Lab at the Institute of Science Tokyo."
     },
     {
       "date": "2026",
@@ -89,8 +89,8 @@
   ],
   "education": [
     {
-      "date": "From October 2026",
-      "degree": "PhD — Incoming",
+      "date": "October 2026 – Present",
+      "degree": "PhD",
       "institution": "Institute of Science Tokyo",
       "detail": "Sakuma Lab"
     },
@@ -109,8 +109,8 @@
   ],
   "appointments": [
     {
-      "date": "From November 2026",
-      "title": "Research Associate — Incoming",
+      "date": "November 2026 – Present",
+      "title": "Research Associate",
       "institution": "RIKEN",
       "detail": ""
     },

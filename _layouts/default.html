@@ -41,8 +41,7 @@
         </div>
         <h2 class="author-name">{{ profile.name | escape }}</h2>
         <div class="author-bio">
-          {% assign sidebar_roles = profile.roles | where: 'status', 'incoming' %}
-          {% if sidebar_roles.size == 0 %}{% assign sidebar_roles = profile.roles %}{% endif %}
+          {% assign sidebar_roles = profile.roles | where: 'status', 'current' %}
           {% for role in sidebar_roles %}
           <div class="sidebar-role">
             <p class="role-title">{{ role.title | escape }}</p>

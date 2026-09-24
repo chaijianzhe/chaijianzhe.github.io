@@ -17,14 +17,14 @@
 
 - `name`、`biography`、`location`：姓名、简介段落和所在地。
 - `email`、`github`、`dblp`、`lab`：侧栏联系方式和学术链接。`secondaryEmail` 保留备用邮箱，默认不显示。
-- `roles`：侧栏身份。`status` 为 `incoming` 的身份会优先显示；身份开始后可更新名称、日期和状态，并同步更新简介、新闻与经历。
+- `roles`：侧栏只显示 `status` 为 `current` 的当前身份，顺序与列表一致；`completed` 的已结束经历不会显示在侧栏。身份变化时请同步更新简介、新闻与经历。
 - `news`、`researchInterests`、`publications`：新闻、研究方向和论文。添加论文时复制一条已有记录，修改标题、作者、链接和 BibTeX；没有的链接可留空字符串。
 - `education`、`appointments`、`presentations`、`honors`：对应各经历栏目。列表顺序就是网页上的显示顺序。
 - `updated`：页面底部的更新日期。
 
 JSON 的文字需要放在英文双引号内，项目之间使用逗号，最后一项后面不加逗号。换行使用 `\n`。固定栏目标题和布局位于 `_layouts/default.html`，样式位于 `styles.css`，日常资料更新无需编辑它们。
 
-当前资料按提供的信息写明 **2026 年 10 月开始博士阶段**、**2026 年 11 月开始 RIKEN Research Associate**，在 2026 年 9 月版中表述为即将开始。GitHub 账号为 [chaijianzhe](https://github.com/chaijianzhe)。发布前可检查侧栏的邮箱和个人链接。
+当前资料将博士生与 RIKEN Research Associate 作为当前身份展示，并保留 **2026 年 10 月开始博士阶段**、**2026 年 11 月开始 RIKEN Research Associate** 的日期。GitHub 账号为 [chaijianzhe](https://github.com/chaijianzhe)。发布前可检查侧栏的邮箱和个人链接。
 
 ## 添加自己的头像
 
