@@ -46,7 +46,7 @@
     }
   ],
   "biography": [
-    "My research focuses on reliable evaluation of large language models and AI security. I study benchmark contamination, inference-time decontamination, and the detection of AI-generated content, with an interest in distinguishing genuine model capabilities from memorization.",
+    "My primary research interests are data contamination, AI security, and embodied AI safety.",
     "I am a PhD student in Sakuma Lab at the Institute of Science Tokyo and a Research Associate in the AI Security and Privacy Team at RIKEN AIP. I also work as a part-time Research Assistant at the Institute of Science Tokyo, where I completed my M.S. in September 2026.",
     "I received my B.Eng. in Software Engineering from the University of Electronic Science and Technology of China (UESTC) in June 2024."
   ],
@@ -65,12 +65,9 @@
     }
   ],
   "researchInterests": [
-    "Large language model evaluation",
-    "Benchmark contamination",
-    "Inference-time decontamination",
+    "Data contamination",
     "AI security",
-    "Model memorization and generalization",
-    "AI-generated content detection"
+    "Embodied AI safety"
   ],
   "publications": [
     {
