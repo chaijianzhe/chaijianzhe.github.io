@@ -22,8 +22,9 @@
     },
     {
       "title": "Research Associate",
-      "organization": "RIKEN",
-      "detail": "",
+      "organization": "RIKEN AIP",
+      "detail": "AI Security and Privacy Team",
+      "detailUrl": "https://www.riken.jp/en/research/labs/aip/phys/ai_sec_privacy/index.html",
       "start": "November 2026",
       "status": "current"
     },
@@ -44,13 +45,13 @@
   ],
   "biography": [
     "My research focuses on reliable evaluation of large language models and AI security. I study benchmark contamination, inference-time decontamination, and the detection of AI-generated content, with an interest in distinguishing genuine model capabilities from memorization.",
-    "I am a PhD student in Sakuma Lab at the Institute of Science Tokyo and a Research Associate at RIKEN. I also work as a part-time Research Assistant at the Institute of Science Tokyo, where I completed my M.S. in September 2026.",
+    "I am a PhD student in Sakuma Lab at the Institute of Science Tokyo and a Research Associate in the AI Security and Privacy Team at RIKEN AIP. I also work as a part-time Research Assistant at the Institute of Science Tokyo, where I completed my M.S. in September 2026.",
     "I received my B.Eng. in Software Engineering from the University of Electronic Science and Technology of China (UESTC) in June 2024."
   ],
   "news": [
     {
       "date": "Nov 2026",
-      "text": "I joined RIKEN as a Research Associate."
+      "text": "I joined the AI Security and Privacy Team at RIKEN AIP as a Research Associate."
     },
     {
       "date": "Oct 2026",
@@ -111,8 +112,9 @@
     {
       "date": "November 2026 – Present",
       "title": "Research Associate",
-      "institution": "RIKEN",
-      "detail": ""
+      "institution": "RIKEN Center for Advanced Intelligence Project (AIP)",
+      "detail": "AI Security and Privacy Team",
+      "detailUrl": "https://www.riken.jp/en/research/labs/aip/phys/ai_sec_privacy/index.html"
     },
     {
       "date": "April 2025 – Present",

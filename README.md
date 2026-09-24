@@ -20,6 +20,7 @@
 - `roles`：侧栏只显示 `status` 为 `current` 的当前身份，顺序与列表一致；`completed` 的已结束经历不会显示在侧栏。身份变化时请同步更新简介、新闻与经历。
 - `news`、`researchInterests`、`publications`：新闻、研究方向和论文。添加论文时复制一条已有记录，修改标题、作者、链接和 BibTeX；没有的链接可留空字符串。
 - `education`、`appointments`、`presentations`、`honors`：对应各经历栏目。列表顺序就是网页上的显示顺序。
+- `roles` 和 `appointments` 中的 `detail` 为研究组等补充信息；可选的 `detailUrl` 将这段文字链接到研究组官网，不需要链接时可省略或留空。
 - `updated`：页面底部的更新日期。
 
 JSON 的文字需要放在英文双引号内，项目之间使用逗号，最后一项后面不加逗号。换行使用 `\n`。固定栏目标题和布局位于 `_layouts/default.html`，样式位于 `styles.css`，日常资料更新无需编辑它们。

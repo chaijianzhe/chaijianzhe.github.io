@@ -46,6 +46,7 @@
           <div class="sidebar-role">
             <p class="role-title">{{ role.title | escape }}</p>
             <p class="role-detail">{{ role.organization | escape }}</p>
+            {% if role.detail and role.detail != '' %}<p class="role-detail">{% if role.detailUrl and role.detailUrl != '' %}<a href="{{ role.detailUrl | escape }}">{{ role.detail | escape }}</a>{% else %}{{ role.detail | escape }}{% endif %}</p>{% endif %}
             <p class="role-date">From {{ role.start | escape }}</p>
           </div>
           {% endfor %}
@@ -110,7 +111,7 @@
           <h2 id="experience-heading">Research experience</h2>
           <ul class="entry-list">
             {% for item in profile.appointments %}
-            <li><div class="entry-date">{{ item.date | escape }}</div><div class="entry-body"><h3>{{ item.title | escape }}</h3><p class="entry-institution">{{ item.institution | escape }}</p>{% if item.detail and item.detail != '' %}<p class="entry-detail">{{ item.detail | escape }}</p>{% endif %}</div></li>
+            <li><div class="entry-date">{{ item.date | escape }}</div><div class="entry-body"><h3>{{ item.title | escape }}</h3><p class="entry-institution">{{ item.institution | escape }}</p>{% if item.detail and item.detail != '' %}<p class="entry-detail">{% if item.detailUrl and item.detailUrl != '' %}<a href="{{ item.detailUrl | escape }}">{{ item.detail | escape }}</a>{% else %}{{ item.detail | escape }}{% endif %}</p>{% endif %}</div></li>
             {% endfor %}
           </ul>
         </section>
