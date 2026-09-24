@@ -23,7 +23,7 @@
       "status": "current"
     },
     {
-      "title": "Research Associate",
+      "title": "Research Associate (full-time)",
       "organization": "RIKEN AIP",
       "detail": "AI Security and Privacy Team",
       "detailUrl": "https://www.riken.jp/en/research/labs/aip/phys/ai_sec_privacy/index.html",
@@ -31,9 +31,9 @@
       "status": "current"
     },
     {
-      "title": "Research Assistant",
+      "title": "Research Assistant (part-time)",
       "organization": "Institute of Science Tokyo",
-      "detail": "School of Computing, part-time",
+      "detail": "School of Computing",
       "start": "April 2025",
       "status": "current"
     },
@@ -46,9 +46,9 @@
     }
   ],
   "biography": [
-    "My primary research interests are data contamination, AI security, and embodied AI safety.",
-    "I am a PhD student in Sakuma Lab at the Institute of Science Tokyo and a Research Associate in the AI Security and Privacy Team at RIKEN AIP. I also work as a part-time Research Assistant at the Institute of Science Tokyo, where I completed my M.S. in September 2026.",
-    "I received my B.Eng. in Software Engineering from the University of Electronic Science and Technology of China (UESTC) in June 2024."
+    "I am pursuing a PhD in Sakuma Lab at the Institute of Science Tokyo while working full-time as a Research Associate in the AI Security and Privacy Team at RIKEN AIP.",
+    "My primary research interests are data contamination, AI security, and embodied AI safety. I also hold a part-time Research Assistant appointment at the Institute of Science Tokyo.",
+    "I received my M.S. from the Institute of Science Tokyo in September 2026 and my B.Eng. in Software Engineering from the University of Electronic Science and Technology of China (UESTC) in June 2024."
   ],
   "news": [
     {
@@ -110,16 +110,16 @@
   "appointments": [
     {
       "date": "November 2026 – Present",
-      "title": "Research Associate",
+      "title": "Research Associate (full-time)",
       "institution": "RIKEN Center for Advanced Intelligence Project (AIP)",
       "detail": "AI Security and Privacy Team",
       "detailUrl": "https://www.riken.jp/en/research/labs/aip/phys/ai_sec_privacy/index.html"
     },
     {
       "date": "April 2025 – Present",
-      "title": "Research Assistant",
+      "title": "Research Assistant (part-time)",
       "institution": "Institute of Science Tokyo",
-      "detail": "School of Computing, part-time. Research on natural language processing, large language model evaluation, benchmark contamination, and model reliability."
+      "detail": "School of Computing. Research on natural language processing, large language model evaluation, benchmark contamination, and model reliability."
     }
   ],
   "presentations": [
