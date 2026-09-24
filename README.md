@@ -27,9 +27,11 @@ JSON 的文字需要放在英文双引号内，项目之间使用逗号，最后
 
 当前资料将博士生与 RIKEN Research Associate 作为当前身份展示，并保留 **2026 年 10 月开始博士阶段**、**2026 年 11 月开始 RIKEN Research Associate** 的日期。GitHub 账号为 [chaijianzhe](https://github.com/chaijianzhe)。发布前可检查侧栏的邮箱和个人链接。
 
-## 添加自己的头像
+## 更换头像
 
-目前使用中性的头像占位图。将真实头像上传为例如 `assets/avatar.jpg`，再把 `_data/profile.json` 的 `avatar` 改为 `"assets/avatar.jpg"`。将 `avatar` 留空会继续显示占位图。
+已配置提供的个人照片 `assets/portrait.jpg`，图片文件保持原样。以后可以直接替换此文件，或上传新图片并修改 `_data/profile.json` 中的 `avatar` 路径，例如 `"assets/avatar.jpg"`。支持 JPG、PNG、GIF、WebP、AVIF；路径应位于 `assets/` 内。
+
+可选的 `avatarPosition` 控制头像框中照片的显示位置，默认 `"50% 50%"`（居中）；例如 `"50% 35%"` 会偏向照片上部。`avatarScale` 控制显示缩放，默认 `1`，大于 `1` 会放大头像。当前照片使用 `avatarPosition: "55% 0%"`、`avatarScale: 1.65`。这些设置只调整网页显示，不改动原始图片。将 `avatar` 留空会显示占位图。
 
 ## 本地预览
 

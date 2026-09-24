@@ -34,7 +34,7 @@
       <aside class="author-profile" aria-label="Personal information">
         <div class="author-avatar">
           {% if profile.avatar and profile.avatar != '' %}
-          <img src="{{ profile.avatar | relative_url | escape }}" alt="{{ profile.name | escape }}" width="176" height="176">
+          <div class="avatar-photo"><img src="{{ profile.avatar | relative_url | escape }}" alt="{{ profile.name | escape }}" width="176" height="176" style="object-position:{{ profile.avatarPosition | default: '50% 50%' | escape }};transform:scale({{ profile.avatarScale | default: 1 | escape }});transform-origin:{{ profile.avatarPosition | default: '50% 50%' | escape }}"></div>
           {% else %}
           <div class="avatar-placeholder" role="img" aria-label="Profile photo placeholder"><span class="avatar-head" aria-hidden="true"></span><span class="avatar-body" aria-hidden="true"></span></div>
           {% endif %}

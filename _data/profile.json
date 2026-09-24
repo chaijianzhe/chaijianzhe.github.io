@@ -10,7 +10,9 @@
   "email": "chai.j.4b1c@m.isct.ac.jp",
   "secondaryEmail": "chaijianzhe@gmail.com",
   "location": "Tokyo, Japan",
-  "avatar": "",
+  "avatar": "assets/portrait.jpg",
+  "avatarPosition": "55% 0%",
+  "avatarScale": 1.65,
   "updated": "September 2026",
   "roles": [
     {
