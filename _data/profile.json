@@ -14,11 +14,11 @@
   "updated": "September 2026",
   "roles": [
     {
-      "title": "M.S. Candidate",
+      "title": "M.S. Graduate",
       "organization": "Institute of Science Tokyo",
-      "detail": "Sakuma Lab, School of Computing; graduation expected September 2026",
-      "start": "April 2024",
-      "status": "current"
+      "detail": "Sakuma Lab, School of Computing; graduated September 2026",
+      "start": "October 2024",
+      "status": "completed"
     },
     {
       "title": "Research Assistant",
@@ -44,8 +44,8 @@
   ],
   "biography": [
     "My research focuses on reliable evaluation of large language models and AI security. I study benchmark contamination, inference-time decontamination, and the detection of AI-generated content, with an interest in distinguishing genuine model capabilities from memorization.",
-    "I am an M.S. candidate in Sakuma Lab at the Institute of Science Tokyo, where I also work as a Research Assistant. I will continue in the lab as a PhD student in October 2026 and join RIKEN as a Research Associate in November 2026.",
-    "I received my B.Eng. in Software Engineering from the University of Electronic Science and Technology of China (UESTC) in June 2024. I expect to complete my M.S. at the Institute of Science Tokyo in September 2026."
+    "I completed my M.S. in Sakuma Lab at the Institute of Science Tokyo in September 2026 and currently work there as a Research Assistant. I will continue in the lab as a PhD student in October 2026 and join RIKEN as a Research Associate in November 2026.",
+    "I received my B.Eng. in Software Engineering from the University of Electronic Science and Technology of China (UESTC) in June 2024."
   ],
   "news": [
     {
@@ -95,7 +95,7 @@
       "detail": "Sakuma Lab"
     },
     {
-      "date": "April 2024 – September 2026 (expected)",
+      "date": "October 2024 – September 2026",
       "degree": "Master of Science",
       "institution": "Institute of Science Tokyo",
       "detail": "School of Computing, Sakuma Lab. Thesis: When Benchmarks Leak: Inference-Time Decontamination for LLMs."
