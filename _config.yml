@@ -1,0 +1,8 @@
+# GitHub Pages builds this repository with its built-in Jekyll support.
+title: "Jianzhe Chai"
+url: "https://chaijianzhe.github.io"
+baseurl: ""
+markdown: kramdown
+exclude:
+  - README.md
+  - preview.html

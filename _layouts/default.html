@@ -1,0 +1,141 @@
+{% assign profile = site.data.profile -%}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ profile.name | escape }}</title>
+    <meta name="description" content="{{ profile.biography | join: ' ' | escape }}">
+    <meta name="author" content="{{ profile.name | escape }}">
+    <link rel="canonical" href="{{ profile.siteUrl | escape }}">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="{{ profile.name | escape }}">
+    <meta property="og:title" content="{{ profile.name | escape }}">
+    <meta property="og:description" content="{{ profile.biography | join: ' ' | escape }}">
+    <meta property="og:url" content="{{ profile.siteUrl | escape }}">
+    <meta name="twitter:card" content="summary">
+    <link rel="stylesheet" href="{{ '/styles.css' | relative_url }}">
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header class="masthead">
+      <div class="masthead-inner">
+        <a class="site-title" href="#about">{{ profile.name | escape }}</a>
+        <nav class="site-nav" aria-label="Main navigation">
+          <a href="#about">About</a>
+          <a href="#publications">Publications</a>
+          <a href="#experience">Experience</a>
+          <a href="#talks">Talks</a>
+        </nav>
+      </div>
+    </header>
+
+    <div class="site-layout">
+      <aside class="author-profile" aria-label="Personal information">
+        <div class="author-avatar">
+          {% if profile.avatar and profile.avatar != '' %}
+          <img src="{{ profile.avatar | relative_url | escape }}" alt="{{ profile.name | escape }}" width="176" height="176">
+          {% else %}
+          <div class="avatar-placeholder" role="img" aria-label="Profile photo placeholder"><span class="avatar-head" aria-hidden="true"></span><span class="avatar-body" aria-hidden="true"></span></div>
+          {% endif %}
+        </div>
+        <h2 class="author-name">{{ profile.name | escape }}</h2>
+        <div class="author-bio">
+          {% assign sidebar_roles = profile.roles | where: 'status', 'incoming' %}
+          {% if sidebar_roles.size == 0 %}{% assign sidebar_roles = profile.roles %}{% endif %}
+          {% for role in sidebar_roles %}
+          <div class="sidebar-role">
+            <p class="role-title">{{ role.title | escape }}</p>
+            <p class="role-detail">{{ role.organization | escape }}</p>
+            <p class="role-date">From {{ role.start | escape }}</p>
+          </div>
+          {% endfor %}
+        </div>
+        <ul class="author-links">
+          {% if profile.location and profile.location != '' %}<li><span class="link-label" aria-hidden="true">⌖</span>{{ profile.location | escape }}</li>{% endif %}
+          {% if profile.email and profile.email != '' %}<li><span class="link-label" aria-hidden="true">✉</span><a href="mailto:{{ profile.email | escape }}">Email</a></li>{% endif %}
+          {% if profile.github and profile.github != '' %}<li><span class="link-label" aria-hidden="true">↗</span><a href="{{ profile.github | escape }}">GitHub</a></li>{% endif %}
+          {% if profile.dblp and profile.dblp != '' %}<li><span class="link-label" aria-hidden="true">↗</span><a href="{{ profile.dblp | escape }}">DBLP</a></li>{% endif %}
+          {% if profile.lab.url and profile.lab.url != '' %}<li><span class="link-label" aria-hidden="true">↗</span><a href="{{ profile.lab.url | escape }}">{{ profile.lab.name | escape }}</a></li>{% endif %}
+        </ul>
+      </aside>
+
+      <main class="page-content" id="main-content">
+        <section id="about" aria-labelledby="about-heading">
+          <h1 id="about-heading">About me</h1>
+          {% for paragraph in profile.biography %}<p>{{ paragraph | escape }}</p>{% endfor %}
+        </section>
+
+        <section id="news" aria-labelledby="news-heading">
+          <h2 id="news-heading">News</h2>
+          <ul class="news-list">
+            {% for item in profile.news %}<li><time>{{ item.date | escape }}</time><span>{{ item.text | escape }}</span></li>{% endfor %}
+          </ul>
+        </section>
+
+        <section id="research" aria-labelledby="research-heading">
+          <h2 id="research-heading">Research interests</h2>
+          <ul class="research-list">
+            {% for interest in profile.researchInterests %}<li>{{ interest | escape }}</li>{% endfor %}
+          </ul>
+        </section>
+
+        <section id="publications" aria-labelledby="publications-heading">
+          <h2 id="publications-heading">Publications</h2>
+          {% for publication in profile.publications %}
+          <article class="publication" id="{{ publication.id | escape }}">
+            <h3 class="publication-title">{% if publication.url and publication.url != '' %}<a href="{{ publication.url | escape }}">{{ publication.title | escape }}</a>{% else %}{{ publication.title | escape }}{% endif %}</h3>
+            <p class="publication-authors">{% for author in publication.authors %}{% if author == profile.name %}<strong>{{ author | escape }}</strong>{% else %}{{ author | escape }}{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}</p>
+            <p class="publication-venue">{{ publication.venue | escape }}{% if publication.year %}, {{ publication.year | escape }}{% endif %}</p>
+            {% if publication.summary and publication.summary != '' %}<p class="publication-summary">{{ publication.summary | escape }}</p>{% endif %}
+            <p class="publication-links">
+              {% if publication.url and publication.url != '' %}<a href="{{ publication.url | escape }}">[Paper]</a>{% endif %}
+              {% if publication.arxiv and publication.arxiv != '' %}<a href="{{ publication.arxiv | escape }}">[arXiv]</a>{% endif %}
+              {% if publication.pdf and publication.pdf != '' %}<a href="{{ publication.pdf | escape }}">[PDF]</a>{% endif %}
+            </p>
+            {% if publication.bibtex and publication.bibtex != '' %}<details class="citation"><summary>BibTeX</summary><pre><code>{{ publication.bibtex | escape }}</code></pre></details>{% endif %}
+          </article>
+          {% endfor %}
+        </section>
+
+        <section id="education" aria-labelledby="education-heading">
+          <h2 id="education-heading">Education</h2>
+          <ul class="entry-list">
+            {% for item in profile.education %}
+            <li><div class="entry-date">{{ item.date | escape }}</div><div class="entry-body"><h3>{{ item.degree | escape }}</h3><p class="entry-institution">{{ item.institution | escape }}</p>{% if item.detail and item.detail != '' %}<p class="entry-detail">{{ item.detail | escape }}</p>{% endif %}</div></li>
+            {% endfor %}
+          </ul>
+        </section>
+
+        <section id="experience" aria-labelledby="experience-heading">
+          <h2 id="experience-heading">Research experience</h2>
+          <ul class="entry-list">
+            {% for item in profile.appointments %}
+            <li><div class="entry-date">{{ item.date | escape }}</div><div class="entry-body"><h3>{{ item.title | escape }}</h3><p class="entry-institution">{{ item.institution | escape }}</p>{% if item.detail and item.detail != '' %}<p class="entry-detail">{{ item.detail | escape }}</p>{% endif %}</div></li>
+            {% endfor %}
+          </ul>
+        </section>
+
+        <section id="talks" aria-labelledby="talks-heading">
+          <h2 id="talks-heading">Talks &amp; posters</h2>
+          <ul class="entry-list">
+            {% for item in profile.presentations %}
+            <li><div class="entry-date">{{ item.date | escape }}</div><div class="entry-body"><h3>{{ item.title | escape }}</h3><p class="entry-institution">{{ item.venue | escape }}</p>{% if item.detail and item.detail != '' %}<p class="entry-detail">{{ item.detail | escape }}</p>{% endif %}</div></li>
+            {% endfor %}
+          </ul>
+        </section>
+
+        <section id="honors" aria-labelledby="honors-heading">
+          <h2 id="honors-heading">Honors &amp; awards</h2>
+          <ul class="entry-list">
+            {% for item in profile.honors %}
+            <li><div class="entry-date">{{ item.date | escape }}</div><div class="entry-body"><h3>{{ item.title | escape }}</h3>{% if item.detail and item.detail != '' %}<p class="entry-detail">{{ item.detail | escape }}</p>{% endif %}</div></li>
+            {% endfor %}
+          </ul>
+        </section>
+      </main>
+    </div>
+
+    <footer class="site-footer"><div class="footer-inner"><p>&copy; {{ site.time | date: '%Y' }} {{ profile.name | escape }}. Last updated: {{ profile.updated | escape }}.</p></div></footer>
+  </body>
+</html>

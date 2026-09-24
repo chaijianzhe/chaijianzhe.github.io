@@ -1,0 +1,155 @@
+{
+  "name": "Jianzhe Chai",
+  "siteUrl": "https://chaijianzhe.github.io/",
+  "github": "https://github.com/chaijianzhe",
+  "dblp": "https://dblp.org/pid/428/0280.html",
+  "lab": {
+    "name": "Sakuma Lab",
+    "url": "https://sites.google.com/view/junsakuma/english"
+  },
+  "email": "chai.j.4b1c@m.isct.ac.jp",
+  "secondaryEmail": "chaijianzhe@gmail.com",
+  "location": "Tokyo, Japan",
+  "avatar": "",
+  "updated": "September 2026",
+  "roles": [
+    {
+      "title": "M.S. Candidate",
+      "organization": "Institute of Science Tokyo",
+      "detail": "Sakuma Lab, School of Computing; graduation expected September 2026",
+      "start": "April 2024",
+      "status": "current"
+    },
+    {
+      "title": "Research Assistant",
+      "organization": "Institute of Science Tokyo",
+      "detail": "School of Computing, part-time",
+      "start": "April 2025",
+      "status": "current"
+    },
+    {
+      "title": "Incoming PhD Student",
+      "organization": "Institute of Science Tokyo",
+      "detail": "Sakuma Lab",
+      "start": "October 2026",
+      "status": "incoming"
+    },
+    {
+      "title": "Incoming Research Associate",
+      "organization": "RIKEN",
+      "detail": "",
+      "start": "November 2026",
+      "status": "incoming"
+    }
+  ],
+  "biography": [
+    "My research focuses on reliable evaluation of large language models and AI security. I study benchmark contamination, inference-time decontamination, and the detection of AI-generated content, with an interest in distinguishing genuine model capabilities from memorization.",
+    "I am an M.S. candidate in Sakuma Lab at the Institute of Science Tokyo, where I also work as a Research Assistant. I will continue in the lab as a PhD student in October 2026 and join RIKEN as a Research Associate in November 2026.",
+    "I received my B.Eng. in Software Engineering from the University of Electronic Science and Technology of China (UESTC) in June 2024. I expect to complete my M.S. at the Institute of Science Tokyo in September 2026."
+  ],
+  "news": [
+    {
+      "date": "Nov 2026",
+      "text": "Upcoming: I will join RIKEN as a Research Associate."
+    },
+    {
+      "date": "Oct 2026",
+      "text": "Upcoming: I will begin my PhD in Sakuma Lab at the Institute of Science Tokyo."
+    },
+    {
+      "date": "2026",
+      "text": "Our paper, When Benchmarks Leak: Inference-Time Decontamination for LLMs, appears in the ACL main conference."
+    }
+  ],
+  "researchInterests": [
+    "Large language model evaluation",
+    "Benchmark contamination",
+    "Inference-time decontamination",
+    "AI security",
+    "Model memorization and generalization",
+    "AI-generated content detection"
+  ],
+  "publications": [
+    {
+      "id": "chai-etal-2026-benchmarks",
+      "title": "When Benchmarks Leak: Inference-Time Decontamination for LLMs",
+      "authors": [
+        "Jianzhe Chai",
+        "Yu Zhe",
+        "Jun Sakuma"
+      ],
+      "venue": "ACL, Main Conference",
+      "year": 2026,
+      "url": "https://aclanthology.org/2026.acl-long.2071/",
+      "arxiv": "https://arxiv.org/abs/2601.19334",
+      "pdf": "https://aclanthology.org/2026.acl-long.2071.pdf",
+      "summary": "We introduce DeconIEP, an inference-time framework that reduces the influence of benchmark memorization using small, bounded perturbations in the input embedding space. It preserves the evaluation set while targeting contamination-driven performance inflation.",
+      "bibtex": "@inproceedings{chai-etal-2026-benchmarks,\n  title = {When Benchmarks Leak: Inference-Time Decontamination for {LLM}s},\n  author = {Chai, Jianzhe and Zhe, YU and Sakuma, Jun},\n  booktitle = {Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)},\n  year = {2026},\n  month = jul,\n  pages = {44743--44760},\n  doi = {10.18653/v1/2026.acl-long.2071},\n  publisher = {Association for Computational Linguistics},\n  url = {https://aclanthology.org/2026.acl-long.2071/}\n}"
+    }
+  ],
+  "education": [
+    {
+      "date": "From October 2026",
+      "degree": "PhD — Incoming",
+      "institution": "Institute of Science Tokyo",
+      "detail": "Sakuma Lab"
+    },
+    {
+      "date": "April 2024 – September 2026 (expected)",
+      "degree": "Master of Science",
+      "institution": "Institute of Science Tokyo",
+      "detail": "School of Computing, Sakuma Lab. Thesis: When Benchmarks Leak: Inference-Time Decontamination for LLMs."
+    },
+    {
+      "date": "September 2020 – June 2024",
+      "degree": "Bachelor of Engineering in Software Engineering",
+      "institution": "University of Electronic Science and Technology of China (UESTC)",
+      "detail": "Undergraduate thesis: Detection of AI Generated Content by Pattern Noise."
+    }
+  ],
+  "appointments": [
+    {
+      "date": "From November 2026",
+      "title": "Research Associate — Incoming",
+      "institution": "RIKEN",
+      "detail": ""
+    },
+    {
+      "date": "April 2025 – Present",
+      "title": "Research Assistant",
+      "institution": "Institute of Science Tokyo",
+      "detail": "School of Computing, part-time. Research on natural language processing, large language model evaluation, benchmark contamination, and model reliability."
+    }
+  ],
+  "presentations": [
+    {
+      "date": "17 September 2025",
+      "title": "Detection and Mitigation of Benchmark Data Contamination on LLM.",
+      "venue": "RIKEN AIP AI Security and Privacy Team: Achievement Workshop",
+      "detail": "Poster presentation, Tokyo, Japan."
+    },
+    {
+      "date": "8–10 September 2023",
+      "title": "Detection of AI Generated Content by Pattern Noise.",
+      "venue": "CCF CHINANET 2023",
+      "detail": "Poster presentation, Wenzhou, China."
+    }
+  ],
+  "honors": [
+    {
+      "date": "2023",
+      "title": "First Place, C4 Network Technology Challenge",
+      "detail": "China Collegiate Computing Contest 2023. Ranked first among approximately 2,430 teams from 390 universities in China."
+    },
+    {
+      "date": "",
+      "title": "Outstanding Undergraduate Thesis",
+      "detail": "UESTC. Detection of AI Generated Content by Pattern Noise."
+    },
+    {
+      "date": "",
+      "title": "Undergraduate Honors Research Project",
+      "detail": "UESTC. Detection of AI Generated Content by Pattern Noise."
+    }
+  ]
+}
